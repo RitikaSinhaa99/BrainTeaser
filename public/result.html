@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <h1 id="result"></h1>
+    </div>
+    <div class="dimg">
+      <img src="giphy.gif" alt="Animated GIF" />
+    </div>
+
+    <script>
+      // Function to make an HTTP request to the server
+      async function fetchResult() {
+        try {
+          // Make the GET request to the server endpoint
+          const response = await fetch("/compare-times");
+          const data = await response.json(); // Parse the JSON response
+
+          // Display the result on the page
+          const resultDiv = document.getElementById("result");
+          resultDiv.innerHTML = `You have a ${data.mindset} mind, based on the time taken for the games.`;
+        } catch (error) {
+          console.error("Error fetching result:", error);
+        }
+      }
+
+      // Call the fetchResult function when the page loads
+      window.onload = fetchResult;
+    </script>
+  </body>
+</html>

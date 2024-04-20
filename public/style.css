@@ -1,0 +1,75 @@
+body {
+  /* font-family: Arial, sans-serif; */
+  margin: 0;
+  padding: 0;
+  /* background-image: url('https://st2.depositphotos.com/2890953/11340/i/450/depositphotos_113408236-left-and-right-brain-illustration.jpg'); light gray */
+  /* background-position: center; */
+  background-image: radial-gradient(
+    circle 448px at center,
+    #16d9e3 0%,
+    #30c7ec 47%,
+    #46aef7 100%
+  );
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+}
+
+header,
+#result {
+  color: aliceblue;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+main {
+  padding-top: 150px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.game {
+  width: 45%;
+  padding: 1rem;
+  border: 2px solid #333;
+  border-radius: 10px;
+}
+
+h2 {
+  margin-left: 390px;
+}
+
+.dimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.dimg2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+} */
+
+header .jersey-10-charted-regular {
+  font-family: "Jersey 10 Charted", sans-serif;
+  font-weight: 400; /* Regular weight */
+  font-style: normal; /* Normal style */
+  font-size: 90px;
+}
+.jersey-10-charted-regular {
+  font-family: "Jersey 10 Charted", sans-serif;
+  font-weight: 400; /* Regular weight */
+  font-style: normal; /* Normal style */
+  font-size: 40px;
+}
+
+.game2 {
+  padding-left: 300px;
+}
